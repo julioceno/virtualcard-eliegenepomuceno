@@ -32,7 +32,7 @@ body,
     justify-content: space-between;
 
 
-    height: 72%;
+    height: 78%;
     width: 100%;
 }
 
@@ -47,15 +47,15 @@ body,
 }
 
 .main .line-up img {
-    min-height:11rem;
-    height: 28vw;
+    min-width:11rem;
+    width: 43vw;
 }
 
 .main .line-up p {
     color: rgba(255, 255, 255, 0.904);
     font-family: 'Nunito', sans-serif;
 
-    font-size: clamp(1.6rem, 3.3vw, 4rem);
+    font-size: clamp(1.6rem, 3.2vw, 4rem);
 }
 
 .main .line-up p span {
@@ -64,7 +64,8 @@ body,
 
 .main .nav {
     min-width: 15rem;
-    width: 70%;
+    max-width: 50rem;
+    width: 60%;
 
     display: flex;
     justify-content: space-between;
