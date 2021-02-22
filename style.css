@@ -34,6 +34,8 @@ body,
 
 
     height: 35rem;
+    width: 100%;
+
 }
 
 .main .line-up {
@@ -44,11 +46,17 @@ body,
     align-items: center;
 }
 
+.main .line-up img {
+    min-height: 9rem;
+    max-height: 20rem;
+    height: 20vw;
+}
+
 .main .line-up p {
     color: rgba(255, 255, 255, 0.904);
     font-family: 'Nunito', sans-serif;
 
-    font-size: 1.2rem;
+    font-size: clamp(1.2rem, 3vw, 2rem);
 }
 
 .main .line-up p span {
@@ -56,7 +64,8 @@ body,
 }
 
 .main .nav {
-    width: 15rem;
+    min-width: 15rem;
+    width: 40%;
 
     display: flex;
     justify-content: space-between;
@@ -64,7 +73,9 @@ body,
 }
 
 .main .nav a img{
-    height: 4rem;
+    min-height: 4rem;
+    max-height: 8rem;
+    height: 10vw;
 }
 
 .footer {
@@ -73,7 +84,7 @@ body,
 
 .footer a {
     color: rgba(255, 255, 255, 0.904);
-    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 3vw, 2rem);
     font-family: 'Open Sans', sans-serif;
 }
 
