@@ -47,15 +47,15 @@ body,
 }
 
 .main .line-up img {
-    min-width:11rem;
-    width: 43vw;
+    min-width:16rem;
+    width: 33vw;
 }
 
 .main .line-up p {
     color: rgba(255, 255, 255, 0.904);
     font-family: 'Nunito', sans-serif;
 
-    font-size: clamp(1.6rem, 3.2vw, 4rem);
+    font-size: clamp(1.6rem, 2.2vw, 3rem);
 }
 
 .main .line-up p span {
@@ -64,7 +64,7 @@ body,
 
 .main .nav {
     min-width: 15rem;
-    max-width: 50rem;
+    max-width: 24rem;
     width: 60%;
 
     display: flex;
@@ -74,8 +74,8 @@ body,
 }
 
 .main .nav a img{
-    min-height: 5rem;
-    max-height: 8rem;
+    min-height: 4rem;
+    max-height: 7rem;
     height: 10vw;
 }
 
@@ -89,6 +89,67 @@ body,
     font-family: 'Open Sans', sans-serif;
 }
 
-.footer a:hover:hover {
+.footer a:hover {
     color: rgba(255, 255, 255, 0.685);
+}
+
+
+@media(min-width:490px) {
+    .main .line-up {
+        margin-top: 6rem;
+    }
+
+    .main .nav {
+        max-width: none;
+        width: 50%;
+        max-width: 43rem;
+    }
+}
+
+@media(min-width:800px) {
+    .main .line-up img {
+        width: 43vw;
+        max-width: 40rem;
+    }
+    
+    .main .line-up p {
+        font-size: clamp(1.8rem, 2.3vw, 2.5rem);
+    }
+    
+}
+
+
+/* animation */
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(-16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.animate-up {
+    animation-name: up;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards;
+}
+
+
+.main .line-up {
+    animation-delay: 50ms;
+}
+
+.main .nav {
+    animation-delay: 100ms;
+    
+}
+
+.footer a {
+    animation-delay: 150ms;
 }
