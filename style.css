@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+html,
+body,
+#container {
+    height: 100%;
+}
+
+#container {
+    background: #513E90;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 0 2rem 0;
+}
+
+.main {
+    padding-top: 10rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+
+    height: 35rem;
+}
+
+.main .line-up {
+    height: 20rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .line-up p {
+    color: rgba(255, 255, 255, 0.904);
+    font-family: 'Nunito', sans-serif;
+
+    font-size: 1.2rem;
+}
+
+.main .line-up p span {
+    font-weight: 700;
+}
+
+.main .nav {
+    width: 15rem;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main .nav a img{
+    height: 4rem;
+}
+
+.footer {
+    margin-bottom: 2rem;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 1.25rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer a:hover:hover {
+    color: rgba(255, 255, 255, 0.685);
+}
