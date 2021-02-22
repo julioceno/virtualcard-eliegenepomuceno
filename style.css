@@ -48,7 +48,7 @@ body,
 
 .main .line-up img {
     min-width:16rem;
-    width: 33vw;
+    width: 45vw;
 }
 
 .main .line-up p {
@@ -124,7 +124,7 @@ body,
 @keyframes up {
     from {
         opacity: 0;
-        transform: translateY(-16px);
+        transform: translateY(20px);
     }
 
     to {
